@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -24,9 +25,14 @@ h3 {
 
   &.lg-heading {
     font-size: 6rem;
+    font-family: cursive;
+    color: $heading-color;
   }
 
   &.sm-heading {
+    color: $heading-color;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     font-size: 2rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
@@ -60,6 +66,10 @@ main {
         @include easeOut();
       }
     }
+  }
+
+  .fa-brands {
+    color: $heading-color;
   }
 
   &#home {

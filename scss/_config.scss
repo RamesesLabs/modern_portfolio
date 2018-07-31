@@ -1,6 +1,7 @@
 $primary-color: #99badd;
 $secondary-color: #ffd700;
 $alternate-color: #464646;
+$heading-color: black;
 $show-home-image: true;
 $home-image: url(../img/banks-216156_1280.jpg);
 $background-opacity: 0.5;
@@ -27,5 +28,30 @@ $background-opacity: 0.5;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+// Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }

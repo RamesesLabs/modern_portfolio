@@ -72,7 +72,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 420;
-    color: set-text-color(#99badd);
+    color: #464646;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -89,6 +89,14 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    test-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; } }
 
 * {
   box-sizing: border-box; }
@@ -122,10 +130,14 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 6rem;
+    font-family: cursive;
+    color: black; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-size: 2rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
@@ -150,6 +162,8 @@ main {
       main .icons a:hover {
         color: #ffd700;
         transition: all 0.5s ease-out; }
+  main .fa-brands {
+    color: black; }
   main#home {
     overflow: hidden; }
     main#home h1 {
